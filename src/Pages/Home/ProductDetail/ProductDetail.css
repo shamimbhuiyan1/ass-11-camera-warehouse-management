@@ -1,0 +1,14 @@
+.pill-btn button {
+    font-weight: bold;
+    font-style: italic;
+}
+/* .custom-border{
+    border-left: 3px solid rgb(228, 205, 205);
+} */
+.custom-border-top{
+    border-top: 3px solid rgb(228, 205, 205);
+}
+
+.product-container{
+    min-height: 100vh;
+}

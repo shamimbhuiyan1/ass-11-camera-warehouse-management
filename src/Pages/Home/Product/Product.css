@@ -1,0 +1,22 @@
+.product-img {
+    width: 270px;
+    height: 270px;
+    border-radius: 16px;
+}
+
+.cart {
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.cart:hover {
+    transform: scale(1.05, 1.05);
+    background-color: rgb(243, 244, 243);
+}
+
+.cart:hover::after {
+    opacity: 0.5;
+}

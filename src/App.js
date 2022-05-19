@@ -12,14 +12,17 @@ import ManageInventories from "./Pages/Account/ManageInventories/ManageInventori
 import MyItems from "./Pages/Account/Dashboard/MyItems/MyItems";
 import StokeItem from "./Pages/Account/StokeItem/StockItem";
 import Footer from "./Pages/Footer/Footer/Footer";
+import Home from "./Pages/Home/Home/Home";
+import ProductDetail from "./Pages/Home/ProductDetail/ProductDtail";
 
 function App() {
   return (
     <div className="overflow-hidden">
-      <h2>Online Camera Warehouse</h2>
+      <h1 className="text-center">Online Camera Warehouse</h1>
       <Toaster />
       <Header />
       <Routes>
+        <Route path="/" element={<Home />}></Route>
         <Route
           path="/manage-inventories"
           element={
@@ -44,7 +47,14 @@ function App() {
             </RequireAuth>
           }
         ></Route>
-
+        <Route
+          path="/inventory/:inventoryId"
+          element={
+            <RequireAuth>
+              <ProductDetail></ProductDetail>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="blog" element={<Blog />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>

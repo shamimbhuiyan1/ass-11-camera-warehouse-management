@@ -1,0 +1,8 @@
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: red !important;
+}
