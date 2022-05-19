@@ -1,0 +1,14 @@
+.item-img{
+    width: 100px;
+    padding-top: 15px;
+}
+
+@media only screen and (max-width:768px) {
+    .item-img{
+        width: 200px;
+        margin: 0 auto;
+    }
+    .manage-items h5 {
+        text-align: center !important;
+    }
+}

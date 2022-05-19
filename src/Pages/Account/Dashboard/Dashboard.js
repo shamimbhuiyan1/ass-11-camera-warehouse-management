@@ -2,8 +2,8 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import PageTitle from "../../../Components/PageTitle/PageTitle";
 
-import auth from "../../../Firebase/firebase.init";
-import profileImg from "../../../images/user.png";
+import auth from "../../../firebase.init";
+/* import profileImg from "../../../images/user.png"; */
 
 const Dashboard = () => {
   const [user] = useAuthState(auth);
@@ -17,9 +17,9 @@ const Dashboard = () => {
           <div className="col-md-6 d-flex align-items-center justify-content-center">
             {user?.photoURL ? (
               // <img className='w-75' src={user?.photoURL} alt="" />
-              <img className="w-50" src={profileImg} alt="" />
+              <img className="w-50" /* src={profileImg} */ alt="" />
             ) : (
-              <img className="w-50" src={profileImg} alt="" />
+              <img className="w-50" /* src={profileImg} */ alt="" />
             )}
           </div>
 

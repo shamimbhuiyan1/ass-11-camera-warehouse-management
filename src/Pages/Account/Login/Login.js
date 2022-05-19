@@ -9,10 +9,10 @@ import {
 import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
 
-import Loading from "../../../components/Loading/Loading";
-import PageTitle from "../../../components/PageTitle/PageTitle";
-import auth from "../../../Firebase/firebase.init";
-import SocialAccount from "../SocialAccount/SocialAccount";
+import Loading from "../../../Components/Loading/Loading";
+import PageTitle from "../../../Components/PageTitle/PageTitle";
+import auth from "../../../firebase.init";
+/* import SocialAccount from "../SocialAccount/SocialAccount"; */
 import "./Login.css";
 
 const Login = () => {
@@ -108,7 +108,7 @@ const Login = () => {
       <div className=" account-container container py-5 ">
         <div className=" custom-style ">
           <h3 className="text-center mb-3 py-4 fst-italic">Welcome Back</h3>
-          <SocialAccount />
+          {/* <SocialAccount /> */}
           {loginError && (
             <p className="text-danger fs-4"> Could not find user </p>
           )}
