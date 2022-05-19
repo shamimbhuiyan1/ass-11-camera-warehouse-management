@@ -1,0 +1,25 @@
+.important-link {
+    display: flex;
+    flex-direction: column;
+}
+.important-link a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 17px;
+    padding: 5px;
+}
+a:hover{
+    color: rgb(247, 175, 40);
+}
+
+/* responsive */
+@media only screen and (max-width:576px) {
+    .logo{
+        text-align: center;
+    }
+    .important-link {
+        margin-top: 30px;
+        text-align: center;
+    }
+}

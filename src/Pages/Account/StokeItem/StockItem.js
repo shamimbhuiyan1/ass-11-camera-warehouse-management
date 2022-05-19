@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import PageTitle from "../../../Components/PageTitle/PageTitle";
 import auth from "../../../firebase.init";
 
-import "./StokeItem.css";
+import "./StockHome.css";
 
 const StokeItem = () => {
   const navigate = useNavigate();

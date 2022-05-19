@@ -11,6 +11,7 @@ import Blog from "./Pages/Blog/Blog";
 import ManageInventories from "./Pages/Account/ManageInventories/ManageInventories";
 import MyItems from "./Pages/Account/Dashboard/MyItems/MyItems";
 import StokeItem from "./Pages/Account/StokeItem/StockItem";
+import Footer from "./Pages/Footer/Footer/Footer";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
