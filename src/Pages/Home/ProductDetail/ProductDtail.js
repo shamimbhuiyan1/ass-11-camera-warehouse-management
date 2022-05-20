@@ -35,7 +35,7 @@ const ProductDetail = () => {
       quantity: quantity,
     };
 
-    const url = `https://camera-warehouse.herokuapp.com/product/${inventoryId}`;
+    const url = `https://vast-cove-35645.herokuapp.com/product/${inventoryId}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -94,7 +94,7 @@ const ProductDetail = () => {
         setDetail(cameraInfo);
       }
 
-      const url = `https://camera-warehouse.herokuapp.com/product/${inventoryId}`;
+      const url = `https://vast-cove-35645.herokuapp.com/product/${inventoryId}`;
       fetch(url, {
         method: "PUT",
         headers: {

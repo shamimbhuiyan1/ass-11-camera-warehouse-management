@@ -8,7 +8,7 @@ const FooterBottom = () => {
       <div className="copy-right text-center ">
         <p>
           Copyright © {currentYear}
-          <Link to="/"> Digital Camera warehouse</Link>
+          <Link to="/"> Online Camera Warehouse</Link>
         </p>
       </div>
     </div>

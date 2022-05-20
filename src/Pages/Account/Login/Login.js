@@ -12,7 +12,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
 import PageTitle from "../../../Components/PageTitle/PageTitle";
 import auth from "../../../firebase.init";
-/* import SocialAccount from "../SocialAccount/SocialAccount"; */
+import SocialAccount from "../SocialAccount/SocialAccount";
+
 import "./Login.css";
 
 const Login = () => {
@@ -79,7 +80,7 @@ const Login = () => {
     if (email.value && password.value) {
       await signInWithEmailAndPassword(email.value, password.value);
       const { data } = await axios.post(
-        "https://camera-warehouse.herokuapp.com/login",
+        "https://vast-cove-35645.herokuapp.com/login",
         { email }
       );
       console.log(data);
@@ -108,7 +109,7 @@ const Login = () => {
       <div className=" account-container container py-5 ">
         <div className=" custom-style ">
           <h3 className="text-center mb-3 py-4 fst-italic">Welcome Back</h3>
-          {/* <SocialAccount /> */}
+          <SocialAccount />
           {loginError && (
             <p className="text-danger fs-4"> Could not find user </p>
           )}

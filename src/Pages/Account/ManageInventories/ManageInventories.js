@@ -13,28 +13,28 @@ const ManageInventories = () => {
   //pagination
   const [cameraCount, setCameraCount] = useState(0);
   const [page, setPage] = useState(0);
-  const [pageProduct, setPageProduct] = useState(5);
+  const [pageCount, setPageCount] = useState(5);
 
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch(
-      `https://camera-warehouse.herokuapp.com/product?page=${page}&pageProduct=${pageProduct}`
+      `https://vast-cove-35645.herokuapp.com/product?page=${page}&pageCount=${pageCount}`
     )
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
       });
-  }, [page, pageProduct]);
+  }, [page, pageCount]);
 
   useEffect(() => {
-    fetch("https://camera-warehouse.herokuapp.com/cameraCollection")
+    fetch("https://vast-cove-35645.herokuapp.com/cameraCollection")
       .then((res) => res.json())
       .then((data) => {
         const count = data.count;
-        const pages = Math.ceil(count / pageProduct);
+        const pages = Math.ceil(count / pageCount);
         setCameraCount(pages);
       });
-  }, [pageProduct]);
+  }, [pageCount]);
 
   if (products <= 0) {
     return <Loading />;
@@ -43,7 +43,7 @@ const ManageInventories = () => {
   const handleDelete = (id) => {
     const deleteItem = window.confirm("Be Careful Before deleting this item ");
     if (deleteItem) {
-      const url = `https://camera-warehouse.herokuapp.com/product/${id}`;
+      const url = `https://vast-cove-35645.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -115,7 +115,7 @@ const ManageInventories = () => {
         <select
           name=""
           id=""
-          onChange={(event) => setPageProduct(event.target.value)}
+          onChange={(event) => setPageCount(event.target.value)}
         >
           <option value="5" selected>
             5

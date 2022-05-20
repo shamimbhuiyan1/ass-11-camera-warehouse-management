@@ -53,7 +53,7 @@ const StokeItem = () => {
       toast.error(`Please Give All Info `, { id: "info" });
     } else {
       axios
-        .post("https://camera-warehouse.herokuapp.com/product", cameraInfo)
+        .post("https://vast-cove-35645.herokuapp.com/product", cameraInfo)
         .then((response) => {
           console.log(response);
           toast.success(`Your Camera Is Stoked `, { id: "stokeItem" });

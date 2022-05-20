@@ -17,7 +17,7 @@ const MyItems = () => {
   useEffect(() => {
     const handleItems = async () => {
       const email = user.email;
-      const url = `https://camera-warehouse.herokuapp.com/my-items?email=${email}`;
+      const url = `https://vast-cove-35645.herokuapp.com/my-items?email=${email}`;
       try {
         const { data } = await axiosPrivate.get(url);
         setMyItems(data);
@@ -36,7 +36,7 @@ const MyItems = () => {
   const handleDelete = (id) => {
     const deleteItem = window.confirm("Be Careful Before deleting this item ");
     if (deleteItem) {
-      const url = `https://camera-warehouse.herokuapp.com/product/${id}`;
+      const url = `https://vast-cove-35645.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })

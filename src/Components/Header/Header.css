@@ -1,0 +1,18 @@
+.dropdown-menu  {
+    background-color: #578295;
+}
+.header-container{
+    background-color: #0e4c67;
+    padding: 10px 0;
+    opacity: 0.7;
+}
+.nav-style a {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 2px;
+    font-size: 18px;
+    color: rgb(241, 232, 232) ;
+}
+.dropdown a {
+    color: #fff !important;
+}

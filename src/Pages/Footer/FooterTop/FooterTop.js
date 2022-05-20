@@ -11,7 +11,7 @@ import {
 
 const FooterTop = () => {
   return (
-    <div className="container pt-2 pb-5">
+    <div className="container pt-2 pb-5 me-4">
       <div className="row">
         <div className="col-md-8 col-sm-12 ">
           <div className="row mt-3">

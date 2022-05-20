@@ -18,7 +18,6 @@ import ProductDetail from "./Pages/Home/ProductDetail/ProductDtail";
 function App() {
   return (
     <div className="overflow-hidden">
-      <h1 className="text-center">Online Camera Warehouse</h1>
       <Toaster />
       <Header />
       <Routes>

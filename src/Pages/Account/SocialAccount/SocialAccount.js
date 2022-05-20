@@ -44,8 +44,8 @@ const SocialAccount = () => {
         onClick={() => signInWithGoogle()}
         className="social-icon py-2 d-flex  container"
       >
-        <img src={google} alt="" />
-        <span className="fs-5 ps-3 text-light">Log in with google</span>
+        <img width={50} src={google} alt="" />
+        <span className="fs-5 ps-3 text-light ">Log in with google</span>
       </div>
       {errorMessage}
       <div className="d-flex align-items-center justify-content-center ">
