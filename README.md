@@ -4,7 +4,8 @@ This project [Online Camera Warehouse](https://online-camera-warehouse.web.app/)
 
 ## Project Description
 
-. Camera Warehouse
+- Camera Warehouse
+- All Kinds Of Popular Digital Cameras are there
 
 ### `Deployment With Firebase`
 
