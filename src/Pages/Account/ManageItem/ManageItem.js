@@ -48,7 +48,7 @@ const ManageItem = ({ product, index, handleDelete }) => {
             </div>
             <div className="col-md-6">
               <button className="btn ">Brand : {brand} </button> <br />
-              <button className="btn ">Price : ${price} </button> <br />
+              <button className="btn ">Price : {price} </button> <br />
               <button className="btn ">Ratings : {ratings} </button>
             </div>
           </div>

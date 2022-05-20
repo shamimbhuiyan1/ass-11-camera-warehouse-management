@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-/* import axiosPrivate from "../../../../api/axiosPrivate"; */
 import axiosPrivate from "../../../../Api/axiosPrivate";
 import PageTitle from "../../../../Components/PageTitle/PageTitle";
 import auth from "../../../../firebase.init";

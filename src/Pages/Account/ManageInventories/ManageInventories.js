@@ -13,28 +13,28 @@ const ManageInventories = () => {
   //pagination
   const [cameraCount, setCameraCount] = useState(0);
   const [page, setPage] = useState(0);
-  const [pageCount, setPageCount] = useState(5);
+  const [productCount, setProductCount] = useState(5);
 
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch(
-      `https://vast-cove-35645.herokuapp.com/product?page=${page}&pageCount=${pageCount}`
+      `https://vast-cove-35645.herokuapp.com/product?page=${page}&productCount=${productCount}`
     )
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
       });
-  }, [page, pageCount]);
+  }, [page, productCount]);
 
   useEffect(() => {
     fetch("https://vast-cove-35645.herokuapp.com/cameraCollection")
       .then((res) => res.json())
       .then((data) => {
         const count = data.count;
-        const pages = Math.ceil(count / pageCount);
+        const pages = Math.ceil(count / productCount);
         setCameraCount(pages);
       });
-  }, [pageCount]);
+  }, [productCount]);
 
   if (products <= 0) {
     return <Loading />;
@@ -115,7 +115,7 @@ const ManageInventories = () => {
         <select
           name=""
           id=""
-          onChange={(event) => setPageCount(event.target.value)}
+          onChange={(event) => setProductCount(event.target.value)}
         >
           <option value="5" selected>
             5
