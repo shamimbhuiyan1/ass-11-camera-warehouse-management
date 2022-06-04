@@ -10,6 +10,7 @@ This project [Online Camera Warehouse](https://online-camera-warehouse.web.app/)
 * You can Update or Delete your Product any time
 * Your orders are protected by our site
 * You can easily manage your product .
+* We have premium camera with discount
 
 ### `Deployment With Firebase`
 
